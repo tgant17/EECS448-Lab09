@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Store</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <h1>Tristan's Online Store</h1>
+    </head>
+
+    <body>
+
+        <form action = "myBackend.php" method = "POST" id="form" onsubmit="return validateInput()">
+            <div class="flexContainer">
+                <div id="ps5">
+                    <h2>PS5: $400</h2>
+                    <img src = "data:image/webp;base64,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">
+                    Quanity: <input id="ps5Price" name="ps5Q" type = "number" value = "0" min="0">
+                </div>
+
+                <div id="Xbox">
+                    <h2>Xbox Series X: $500</h2>
+                    <img src = "data:image/webp;base64,UklGRiwEAABXRUJQVlA4ICAEAAAQFQCdASpMAFoAPkkSkkkikVFKqCgEhLSAag22Z0kCSP8txX7Vv+J/JniOsXf4PjW02GPD0Hv9TzH/SP/h9wz+Tf1P/W9h79nfZN/ZITlsJ9xhKYDkxiVIzxqUPN6hmQUp1dWEVnamOcxAJgy30CSKaJO9cEjyNezL3J2TMFmTaf/ET+g7g2oGIl/9xKsRgJtW5SeiXwO/8N8t3kuqJBMgV2S5ineSbQ9kiPzRV4cI1GAA/v8SnYXle33mbzB4w+lSWQ1aMm9UPt2+/GFgq8wwo7HYjdoMDJUXR4oB62vTvfzx4CoJWWoWvDrFq68galaYSic+TV3pJ2+yNaafvChMJh0m/6jPjlvxHb7l94XnlCrO8466mgyXTakgEut8jRp28plLoFtISU4kwK04Ya/n31OOzCGxDOfhPCCzTp9kBbgYA3F879E7NWQzGZVnFBYvU+dLfokFYmbSpOG0hDCjTgaQrZocUIyv+IBYa52swKI94uE6TTJJeoYYTexNInd3zeJpiRoaP0c0kNttglF38AzF8B/Ax9B1+C/O6IfKUFhMU2IepnP9cEWHihI8IC2b5v0CJtQwDy9+f5ln4z5KnKURn+ZSnk7bNw+rhy/w0hJDV+sqgkPP5te0P3Jpx1D6b8mcVWHWuiJaxnSDt+Pn/GCQTyR/Fug0Hp91XLiNvyEImsMNTbzE1EoCKcQIDpJvgDBsEbZtOs115bUqvczG7LOmDDvAl/uL6tE4n3MFlUf/RquxWgtXtsh67/duug5a1AZQu7c17WSuatkp7T8fw/fK0UdIWEf0ehrL40k3NbudsLsvk7g81kS8osuZejua0Uga3I+mqliCN9KJJyW4cp8RaogQbjNmyV/xU1m7vfRthx0+mpOdj/84+Ft+lYN1LRL3AagLGHIRITR99ZsEeyN46xMSYaAxE3VG1+kzXQsL2wOXjRjS+nj64rP/w479TlIgLuR7Ra+EWVDZUbW6Z9evQ9qPf23+jHvshNwfE7AtAxlxXcsKxwmUwdFdV06Y620jL9uNR/PJ7TjiL9lAjUtzQWQSJiIzItTbhfBtnzx0dv6SCEPU1MjwwvBPntcAywCP9kAaI/uiAyJsjfST4F+j9Mb/L6bcrw+X774ECz5jQT+fD6w+gj2LnJsbNexmb809aGxHdF2/xDiz+jCGPkjcMlLb+JHrmEpFbDPv/Wm5QnqC7GFK4ccOJqUdKJ8F9GTih72dp8dwUfEoFWfrZp6BDvj+Wktwq39RPCruqcTRjwGgFBqeSHvzQYPvNz+f2c68Xz+kHgEj03VT2zcW37//hiQ/3R/6APa3K7KHGSH/Ues+EIrqXuhxfzU/JJgSEO865lvV+w2c/+jn+m6tJwlovDBgEOPSJ2pzTpdgMvVHDVnTuyN82e14rKksAAA=">
+                    Quanity: <input id="xboxPrice" name="xboxQ" type = "number" value = "0" min="0">
+                </div>
+
+                <div id="switch">
+                    <h2>Nintendo Switch: $300</h2>
+                    <img src = "data:image/webp;base64,UklGRj4FAABXRUJQVlA4IDIFAAAQGQCdASpaAFoAPk0Ok0mikVFLwCgExKANT8jwnPynJTBU8s8ufkPPjvWr4wHkze7PygOse9AD9K/TG/bv4Uv3R9JnBIWpWo/cjlYI/RuzHl20v9C8s3+q9RL/d8230p7A38n/qnpYetX0Tf2AY+7KMTURZJZnpPfOi5kbNDPZjNRMIuTyZAs73TkZitV15Hthfr4qC0+2LgIbZ8SOTgLPYWXfMWSdyzWEb04GL3vxjFKndXOFM3dlanxTxAut+8PdFC2uEhSmSjrK8BykorY7AAD+/z1YBLcYgq2VL7WL360+EcnAJi5KBmddGzw3kc6/o8Xz4ungwcJKDhU/E7zKTe50FDdbED6YxVM8Ba4yP+l4f+B+WCxiVgWD/pd5ubsBNyYjHyMRNm5ZpzQX85PuBqxe6roe2OE3EdT8KCsPqs9DAoxRRLbMPaY64LdGv1ebDl4uGR3gkxK2I8L1vQNrs2hdeQvNO12e6NUOG2XOlMDjNe3cjvrkHvhX5pRuuYX6CQ7Gq/rcedFI9sI5bEXLhps9gEy2XBvds7mspYtxRkr/jWgfX7EcD75lq9r+36zvOd6Rf0ssYOM1ikxH7TJ+/b5cpvJ1HHKK/nLuae2LABjPnxufZz3x8JrY5JfBovWu12Dknn8JaqQLqSdzs7g9/8xs3crXZA3rTKYOKHZ05veOPzAhrjI0henH/UD4LVfpPCFdyASdeag0LmMg2SpVOC+hJIvGtq8W8bZiV4IEN0xA8mU23P6YtG1U2rBhKeww13tuZVjsPu8DKQRmBOE9aYh5YnxnS7O+N1y3Hj1Sq5TCObPJvO8rP9B5HvoWt/jF/QBwzEbk1CbQVbpVrPz+vfC7+tho1v+JZXwL44fbD1S+YazD98T90YzVv7mTehbXIvznv+H//0sKQzTtWKs0ed3umu7hvEnoL/7zb9kiRQMmosJop90Fr/LPmNTvIIugbrV00taHGLUw/4QIb/o/+imMhZ9HAGyR0n0/sg+9LJ8TR2vbjQnEtr3HrvaVya5/QSwJHAGwWJkvrn1+J8/EIg3i6Jc7DA1fbrkP0Ev4Sy6B0jTIMTUgsYri9HbkC+sEgHusIE9+STyzLghUZlvHW9N/H4Ia9dewWv2ZLxL+vHPFvMAqHe1WnCpgsLhdjU3t/rvVjtYwQq+FDHA6Ja9ob7DwLDEydj4RatdemXd+rmxyS7F9/MMsz5YWRtOeWgnlH8mtxX9YLMy7woUfjkvyFlYN9hLzIb9GzNmD8Bd/WwZX1cfSO5wYa+lR7tt9o/9Ar7BAZXRND8GWRYgyi553HIIBOXbIzuZFG/l+4cZD+wE0SWYG+EddhNEP/+s3J+yygDV+5+8sSJuVs5GYNf/pUmCfv4Q7M6gDdXxUd+EwcaMC7MbpxnXlz64E7QfsNSQaGSZmgxIkuSDABwlnkm+0IT0w+FiPdkcK65ubrh/w60WKcsoOr+HGup9DVDl30ZuqSCbbv+AXTWgYiOU1Ly5izxec+T72z2q4CP4+CwDOKs64YXFq+cbBTeB0OOIXxzL7osRj381/knPtfVLoowaz8Q8Rv5jEycc6x98okSJNdZQmKfLSuc5l9Hr18+S0dvBDmswmRqhJrMxJ+zqJk7jT/BzG200XU9lrpezn1saLb4dLdNfE3ItPcubhXP6scikFP3Km5jpuySh7xbg9J5chnxFMrzapnUPtcfeLUR+s8Q5hTGYCnLPkREVMTl28p4w1534y/idg7fO+oP9/xxe5A/+zNYawwKjAAvfyiAAAAAAA">
+                    Quanity: <input id="switchPrice" name="switchQ" type = "number" value = "0" min="0">
+                </div>
+            </div>
+
+            <div class = "confirmOrder">
+                <h2>Shipping</h2>
+                Please choose a shipping type <br>
+                <input type="radio" name="shipping" value="0" checked="true"> Free 7 day<br>
+                <input type="radio" name="shipping" value="50"> Overnight: $50.00<br>
+                <input type="radio" name="shipping" value="5"> Three Day: $5.00<br><br>
+
+                Username: <input id="username" name="username" type="text"><br>
+                Password: <input id="password" name="password" type="text" required><br>
+            </div>
+
+            <br><input type = "reset" value="Clear Order">
+            <input type = "Submit" value="Confirm Order">
+
+        </form>
+    </body>
+    <script src = "formChecker.js"></script>
+</html>

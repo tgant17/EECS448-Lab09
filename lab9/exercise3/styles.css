@@ -1,0 +1,49 @@
+body
+{
+    background: #29d9ca;
+}
+
+h1
+{
+    text-align: center;
+}
+
+img
+{
+    height: 300px; 
+    width: 300px;
+}
+
+div
+{
+    display: flexbox;
+    margin-right:450px;
+
+}
+
+.flexContainer
+{
+    display: flex;
+}
+
+input
+{
+    background: #29d9ca;
+}
+
+.confirmOrder
+{
+    margin-top: 100px;
+    /* text-align: center; */
+}
+
+input[type="radio"] 
+{
+    background: #29d9ca;
+}
+
+table
+{
+    border-collapse: collapse;
+    border: 10px solid;
+}
